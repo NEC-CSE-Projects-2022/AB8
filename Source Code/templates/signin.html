@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="wpoceans">
+    <link rel="shortcut icon" type="image/png" href="static/assets/images/favicon.png">
+    <title>Sign In</title>
+    <link href="static/assets/css/themify-icons.css" rel="stylesheet">
+    <link href="static/assets/css/flaticon.css" rel="stylesheet">
+    <link href="static/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/assets/css/animate.css" rel="stylesheet">
+    <link href="static/assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="static/assets/css/owl.theme.css" rel="stylesheet">
+    <link href="static/assets/css/slick.css" rel="stylesheet">
+    <link href="static/assets/css/slick-theme.css" rel="stylesheet">
+    <link href="static/assets/css/swiper.min.css" rel="stylesheet">
+    <link href="static/assets/css/owl.transitions.css" rel="stylesheet">
+    <link href="static/assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="static/assets/css/odometer-theme-default.css" rel="stylesheet">
+    <link href="static/assets/sass/style.css" rel="stylesheet">
+    <link href="static/assets/css/signin-custom.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="static/assets/css/shared-styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <section class="signin-hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="signin-form-box">
+                            <h3>Sign In to Your Account</h3>
+                            <form action="/signin" method="GET">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" name="user" placeholder="Username" required>
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" name="password" placeholder="Password" required>
+                                <button class="btn btn-primary w-100 mt-2" type="submit">Sign In</button>
+                            </form>
+                            <div class="text-center mt-3">
+                                <p>Don't have an account? <a href="/logon">Sign Up</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 signin-img-box">
+                        <img src="static/assets/d-right.png" alt="Sign In Illustration">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="static/assets/js/jquery.min.js"></script>
+    <script src="static/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="static/assets/js/modernizr.custom.js"></script>
+    <script src="static/assets/js/jquery-plugin-collection.js"></script>
+    <script src="static/assets/js/script.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var navLinks = document.querySelectorAll('.nav-link.nav-animate');
+      navLinks.forEach(function(link, i) {
+        link.style.opacity = 0;
+        setTimeout(function() {
+          link.style.transition = 'opacity 0.5s cubic-bezier(.4,2,.6,1)';
+          link.style.opacity = 1;
+        }, 200 + i * 120);
+      });
+    });
+    </script>
+</body>
+</html>
+
