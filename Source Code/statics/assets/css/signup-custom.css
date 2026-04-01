@@ -1,0 +1,70 @@
+.signup-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+}
+.signup-form-box {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(60,60,120,0.08);
+    padding: 40px 32px;
+    margin: 32px 0;
+}
+.signup-form-box h3 {
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.signup-form-box label {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.signup-form-box input {
+    margin-bottom: 16px;
+}
+.signup-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.signup-img-box img {
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(60,60,120,0.10);
+}
+@media (max-width: 991px) {
+    .signup-img-box { display: none; }
+}
+.animated-navbar {
+  transition: box-shadow 0.3s;
+  z-index: 1030;
+}
+.animated-navbar .navbar-nav .nav-link {
+  position: relative;
+  font-weight: 600;
+  color: #222;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  transition: color 0.2s, transform 0.2s;
+}
+.animated-navbar .navbar-nav .nav-link.nav-animate::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #007bff;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+.animated-navbar .navbar-nav .nav-link.nav-animate:hover,
+.animated-navbar .navbar-nav .nav-link.nav-animate.active {
+  color: #007bff;
+  transform: translateY(-2px) scale(1.05);
+}
+.animated-navbar .navbar-nav .nav-link.nav-animate:hover::after,
+.animated-navbar .navbar-nav .nav-link.nav-animate.active::after {
+  width: 100%;
+} 
