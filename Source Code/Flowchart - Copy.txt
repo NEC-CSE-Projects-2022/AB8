@@ -1,0 +1,26 @@
+1. Importing the packages
+2. Exploring the dataset 
+3. Data Preprocessing
+	- Convert .mat to images
+	- mask the images
+	- alignment the mask  
+4. Overlay the imges
+5. Create yolo labels
+6. Data visualization
+7. Training the model
+	- yolov5
+	- yolov7
+	- yolov8
+8. Comparing the models with precision, recall, mAP score
+9. Comparison Graphs are generated with scores of all models.
+
+
+FrontEnd 
+-------- 
+11. Frontend is developed with help of Flask Framework, along with Registration and Login setup with support of Sqlite DB 
+12. For the frontend we used the data for detection 
+13. User gives input as brain tumor image 
+14. The given input is preprocessed for detection 
+15. Trained model is used for detection 
+16. Final detected image is displayed through frontend
+
